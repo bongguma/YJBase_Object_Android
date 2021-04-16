@@ -26,6 +26,13 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
+
+    // 앱 크기를 줄이기 위해 패키징 시 제외할 파일 기입
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+    }
 }
 
 def AAVersion = '4.6.0'     // 버전 상수
@@ -53,6 +60,18 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
     // spring restTemplate은 java기반의 rest클라이언트 라이브러리 (restful 통신)
     implementation 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+    // 당겨서 새로고칭 UI 라이브러리
+    implementation 'com.navercorp.pulltorefresh:library:3.2.3@aar'
+    // ReactiveX 관련 기능을 앱에서 쉽고 간견하게 사용할 수 있는 라이브러리
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    // 특정 이벤트를 발생시키고 싶은 경우 사용하는 라이브러리
+    implementation 'com.squareup:otto:1.3.8'
+    // 앱 이미지를 로드해올 때 사용해주는 라이브러리(picasso)
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // 앱 이미지를 로드해올 때 사용해주는 라이브러리 (glide)
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    // 고품질 애니메이션을 위한 라이브러리
+    implementation 'com.airbnb.android:lottie:3.0.3'
 
     // 파이어베이스 관련 라이브러리
     // Add the Firebase Crashlytics SDK.
