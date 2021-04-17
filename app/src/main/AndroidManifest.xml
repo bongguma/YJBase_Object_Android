@@ -2,6 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yjbase_object_android">
 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!--블루투스 권한 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 블루투스 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 카메라 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" />  <!-- 화면이동 권한-->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!--와이파이 권한-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 와이파이 권한-->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!--전화번호 권한-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 쓰기 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 읽기 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 네트워크 권한-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
